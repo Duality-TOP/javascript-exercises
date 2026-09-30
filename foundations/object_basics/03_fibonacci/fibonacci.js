@@ -1,5 +1,5 @@
 const fibonacci = function(num) {
-    if (num < 0 || typeof num !== "number") return "OOPS";
+    if (num < 0 || typeof num !== "number" || Number.isNaN(num)) return "OOPS";
     if (num === 0) return 0;
 
     let firstPrevious = 1;
